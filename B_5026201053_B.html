@@ -112,7 +112,7 @@
                     return false;
                 }
                 if(nama.length < 10){
-                    alert("Jumlah karakter yang diperbolehkan untuk nama barang minimal 10 karakter");
+                    alert("Jumlah karakter untuk nama barang minimal 10 karakter");
                     return false;
                 }
                 if(price == ""){
@@ -121,11 +121,11 @@
                 }a
                 var angka = /^[0-9]+$/;
                 if(!price.match(angka)){
-                    alert("Gunakan hanya angka saat mengisi harga!");
+                    alert("Gunakan angka saja saat mengisi harga!");
                     return false;
                 }
                 if(price<=5000){
-                    alert("Minimal harga yaitu 5000")
+                    alert("Minimal untuk isi harga yaitu 5000")
                     return false;
                 }
                 if(document.getElementById("jenis").selectedIndex == 0){
@@ -137,11 +137,11 @@
                     return false;
                 }
                 if(!code.match(angka)){
-                    alert("Gunakan hanya angka saat mengisi kode barcode!");
+                    alert("Gunakan angka saja saat mengisi kode barcode!");
                     return false;
                 }
                 if(code.length < 10){
-                    alert("Jumlah karakter yang diperbolehkan untuk kode barcode minimal 10 karakter");
+                    alert("Jumlah karakter untuk kode barcode minimal 10 karakter");
                     return false;
                 }
             }
